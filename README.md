@@ -4,7 +4,7 @@ Présentation JHipster
 ## Instalation
 1. Import presentation
 ```
-git clone https://github.com/moabdi/jhipster/presentation
+git clone https://github.com/moabdi/jhipster.git
 ```
 
 2. Installation des dépendances  
