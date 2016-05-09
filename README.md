@@ -1,2 +1,2 @@
-# jhipster
-présentation jhipster
+# JHipster
+Présentation JHipster
