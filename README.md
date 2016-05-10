@@ -2,17 +2,18 @@
 Présentation JHipster
 
 ## Instalation
-1. Import presentation
+### Importer la présentation
 ```
 git clone https://github.com/moabdi/jhipster.git
 ```
 
-2. Installation des dépendances  
+### Installation des dépendances  
 ```
 npm install
 ```
 
-3. Lancer la présentation
+### Lancer la présentation
+
 ```
 grunt serve
 ```
