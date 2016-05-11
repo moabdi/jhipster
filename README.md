@@ -7,7 +7,7 @@ Présentation JHipster
 git clone https://github.com/moabdi/jhipster.git
 ```
 
-#### Installer des dépendances  
+#### Installer les dépendances  
 ```
 npm install
 ```
