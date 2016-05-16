@@ -1,5 +1,5 @@
 # JHipster
-Présentation JHipster
+Découvrir JHipster et apprendre à l'utiliser.
 
 ## Instalation
 #### Importer la présentation
@@ -13,6 +13,9 @@ npm install
 ```
 
 #### Lancer la présentation
+```
+npm install -g grunt-cli
+```
 
 ```
 grunt serve
