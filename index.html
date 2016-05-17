@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jhipster by moabdi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Jhipster</h1>
+      <h2 class="project-tagline">présentation jhipster</h2>
+      <a href="https://github.com/moabdi/jhipster" class="btn">View on GitHub</a>
+      <a href="https://github.com/moabdi/jhipster/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/moabdi/jhipster/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p>&lt;!doctype html&gt;
+
+    </p>
+        
+        JHipster
+        
+        
+        
+        
+        
+        
+        
+        
+
+<pre><code>    &lt;!-- For syntax highlighting --&gt;
+    &lt;link rel="stylesheet" href="lib/css/zenburn.css"&gt;
+    &lt;link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32"&gt;
+    &lt;!-- If the query includes 'print-pdf', use the PDF print sheet --&gt;
+    &lt;script&gt;
+        document.write( '&lt;link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print"&gt;' );
+    &lt;/script&gt;
+
+    &lt;!--[if lt IE 9]&gt;
+    &lt;script src="lib/js/html5shiv.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="reveal"&gt;
+        &lt;!-- Any section element inside of this container is displayed as a slide --&gt;
+        &lt;div class="slides"&gt;
+            &lt;section data-markdown&gt;
+                # Java Hipster 
+
+                ![](images/logo-jhipster-drink-coffee.png)
+
+                ## Développement web moderne
+
+                [Animé par: Mostapha ABDI / @mostaphabdi](http://twitter.com/mostaphabdi)
+            &lt;/section&gt;
+
+            &lt;section  data-background="#e7e7e7" data-background-transition="zoom" data-markdown
+            data-menu-title="Custom Menu Title"&gt;
+                # Objectifs
+                ###### -
+                ##### 1. C'est quoi JHipster ?
+                ##### 2. Pourquoi JHipster ?
+                ##### 3. Comment ça marche? 
+            &lt;/section&gt;
+
+            &lt;section&gt;
+                &lt;section data-background="#e7e7e7" data-background-transition="zoom" data-markdown&gt;
+                    # Développement web moderne
+                &lt;/section&gt;
+                &lt;section data-background-transition="zoom" data-markdown&gt;
+                    ## Les applications web modernes
+                    ###### -
+                    Les exigences des utilisateurs finaux ont été évolués. Les gens sont fatigués de sites lents et non réactifs.                         Ils veulent: 
+
+                    * Avoir une belle conception
+                    * Cesser d'attendre le chargement des pages
+                    * Avoir des mises à jour dynamiques de fragments de page
+
+                    ---
+                    ### _Besoin d'utiliser les dernières technologies  HTML5/CSS3/JavaScript_
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## La productivité de développeur
+                    ###### -
+
+                    * Ces sites doivent être livrés _rapidement_.
+
+                    * Attendre 1 minute pour « déployer » votre application n’est plus acceptable
+
+                    ---
+                    ### _Besoin de bons outils pour ce travail!_
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Logiciel de prête-production
+                    ###### -
+                    * Les sites web modernes devraient être en mesure de gérer un très grand nombre d'utilisateurs simultanés
+
+                    * Utilisant toutes les applications RESTful massives, qui frapperont fort vos serveurs back-end
+
+                    ---
+                    ### _besoin de serveurs robustes, évolutifs, et de haute performance_
+                &lt;/section&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;section data-background="#e7e7e7" data-background-transition="zoom" data-markdown&gt;
+                        # JHipster
+                        ###### -
+                        ![](images/Jhipster.png)
+
+                        &lt;a href="http://jhipster.github.io"&gt;http://jhipster.github.io&lt;/a&gt;
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                        ## Cocktail   technologies 
+                        ###### -
+                        ![](images/cock.png)
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## JHipster
+                    ###### -
+                    * JHipster rend tout travail ensemble
+                    * JHipster crée une application de travail complete, avec toutes ces technologies
+                    * Tout fonctionne out-of-the-box
+                    * Flux de travail Gulp fonctionne très bien avec Maven!
+                    * Configuration Docker pour exécuter tout en douceur!
+
+                &lt;/section&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;section data-background="#e7e7e7"  data-background-transition="zoom" data-markdown&gt;
+                    # Front-End
+                    ###### -
+                    ### Yeoman, Gulp, Bower, AngularJS, Bootstrap
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Yeoman
+                    ###### -
+                    ### Yeoman fournit des _générateurs_  d'applications
+
+
+                    * Des centaines de générateurs sont disponibles
+                    * Principalement orientée vers les applications JavaScript front-end
+                    * Les générateurs meilleurs sont d'excellente qualité
+
+                    ```
+                    &lt;code data-trim contenteditable&gt;yo jhipster&lt;/code&gt;
+                    ```
+
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Gulp | Grunt
+                    ###### -
+                    ### Tâche runner de JavaScript
+
+                    * Pour le développement, il vous permettra d'avoir « le montage en direct »de votre code, d’exécuter vos tests en arrière-plan ...
+                    * Pour la production, il va compresser et optimiser toutes vos ressources, compiler votre code Sass ...
+
+                    ```
+                        &lt;code data-trim contenteditable&gt; &gt; gulp test&lt;/code&gt;
+                    ```
+                    ```
+                        &lt;code data-trim contenteditable&gt; &gt; grunt test&lt;/code&gt;
+                    ``` 
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Bower
+                    ###### -
+                    ### Gestionnaire de paquets JavaScript
+
+                    * Vous pouvez rechercher, installer et mettre à jour vos bibliothèques JavaScript
+                    * Il fournit un _grand_ nombre de bibliothèques
+
+                    ```
+                    &lt;code data-trim contenteditable&gt; &gt; bower install angular&lt;/code&gt;
+                    ```
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Karma
+                    ###### -
+                    ### Karma exécute des tests unitaires sur votre code JavaScript
+
+                    * Il est très rapide, et peut fonctionner continuellement en arrière-plan
+
+                    ```
+                    &lt;code data-trim contenteditable&gt;karma start src/test/javascript/karma.conf.js&lt;/code&gt;
+                    ```
+                &lt;/section&gt;
+                &lt;section&gt;
+                    &lt;h2&gt;AngularJS&lt;/h2&gt;
+                    &lt;h6/&gt;
+                    &lt;h3&gt;Le framework JavaScript le plus populaire&lt;/h3&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Puissant &amp;amp; facile à apprendre&lt;/li&gt;
+                        &lt;li&gt;Data binding, validation formulaire, i18n...&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;pre&gt;
+                        &lt;code data-trim contenteditable&gt;
+</code></pre>
+
+<p></p>
+
+<h1>
+<a id="hello-yourname" class="anchor" href="#hello-yourname" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hello {{yourName}}!</h1>
+
+<pre><code>                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/section&gt;
+                &lt;section&gt;
+                    &lt;h2&gt;Twitter Bootstrap&lt;/h2&gt;
+                    &lt;h6/&gt;
+                    &lt;h3&gt;Un framework CSS/JavaScript génial pour les applications web responsives&lt;/h3&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Les éléments CSS et HTML pour tous les usages communs&lt;/li&gt;
+                        &lt;li&gt;Des tonnes de composants JavaScript: menus, navbars, boîtes déroulantes, alertes ...&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;pre&gt;
+                        &lt;code data-trim contenteditable&gt;
+</code></pre>
+
+<div>
+    <strong>Hello, world!</strong>
+</div>
+
+<pre><code>                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                &lt;/section&gt;
+            &lt;/section&gt;
+
+            &lt;section&gt;
+                &lt;section data-background="#e7e7e7" data-background-transition="zoom" data-markdown&gt;
+                    #Back-End 
+                    ###### -
+                    ### Maven, Spring, Spring MVC REST, Spring Data JPA, Netflix OSS
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Maven / Gradle
+                    ###### -
+                    ### Les plus populaires Java build tools
+
+                    * Bien connus, des répertoires et des objectifs prédéfinis
+                    * Intégration avec les EDIs principaux
+                    * Grand écosystème de plug-in, y compris Spring Boot et Yeoman
+
+                    ```
+</code></pre>
+
+<p>./mvnw spring-boot:run
+                        <code>
+</code>
+./gradlew bootRun
+                        ```
+                    
+                     
+                        ## Spring Boot
+                        ###### -
+                        ### Standard de-facto pour les apps Java </p>
+
+<pre><code>                    * IoC, AOP et abstractions pour faciliter le codage d'application
+                    * Rapide et léger, et extrêmement puissant en cas de _besoin_
+                    * Live-reload d'application
+
+
+                    ```java
+</code></pre>
+
+<p><a href="https://github.com/Service" class="user-mention">@Service</a>
+<a href="https://github.com/Transactional" class="user-mention">@Transactional</a>
+public class UserService {</p>
+
+<pre><code>@Inject
+private UserRepository userRepository;
+</code></pre>
+
+<p>}
+                        ```
+                    
+                     
+                        ## Netflix OSS
+                        ###### -
+                        ### Fournit des outils et des frameworks pour microservices </p>
+
+<pre><code>                    * Eureka - Service _registry_ pour l'équilibrage de charge et de basculement.
+                    * Zuul - Proxy pour le routage dynamique, la surveillance et la sécurité
+                    * Ribbon - software load balancing pour les services
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Liquibase
+                    ###### -
+                    ###Les mises à jour de base de données en toute simplicité
+
+                    * Mettre à jour un schéma de base de données
+                    * Fonctionne très bien avec Spring et JPA
+                    * A besoin d'une bonne compréhension des bases de données et d’ORM
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## JPA
+                    ###### -
+                    ### La solution ORM standard pour Java
+
+                    * Hibernate est utilisé en dessous
+                    * Très complet, ensemble impressionnant de fonctionnalités
+
+                    ```java
+</code></pre>
+
+<p><a href="https://github.com/Entity" class="user-mention">@Entity</a>
+public class User implements Serializable {</p>
+
+<pre><code>@Id
+private String login;
+</code></pre>
+
+<p>}
+                        ```
+                    
+                     
+                        ## Spring Data JPA
+                        ###### -
+                        ### Complément suplimentaire de JPA </p>
+
+<pre><code>                    * Génère automatiquement des _repositories_ JPA
+                    * Supprime beaucoup de code réutilisable
+
+                    ```java
+</code></pre>
+
+<p>public interface PersistenceAuditEventRepository extends JpaRepository
+    &lt;PersistentAuditEvent, String&gt; {</p>
+
+<pre><code>List&amp;lt;PersistentAuditEvent&amp;gt;
+    findByPrincipalAndAuditEventDateGreaterThan(
+                String principal, LocalDateTime after);
+</code></pre>
+
+<p>}
+                        ```
+                    
+                     
+                        ## MongoDB
+                        ###### - 
+                        ### NoSQL pour l'évolutivité </p>
+
+<pre><code>                    * Alternative à la base de données SQL et le choix JPA
+                    * Code similaire: fonctionne comme Spring Data JPA
+                    * Plus évolutif, facile à utiliser
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Cassandra
+                    ###### -
+                    ### NoSQL pour l'évolutivité
+
+                    * 2ème alternative à la base de données SQL et le choix JPA
+                    * Haute disponibilité
+                    * Des performances extrêmes et une faible latence pour les applications critiques
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Caching
+                    ###### -
+                    ### Caching est le roi des performances
+
+                    * Ehcache est la solution la plus largement utilisée
+                    * HazelCast est une excellente alternative, avec le soutien de clustering!
+                    * Hibernate, 2ème niveau de cache ou l’abstraction Spring Caching
+
+                    ```java
+</code></pre>
+
+<p><a href="https://github.com/Entity" class="user-mention">@Entity</a>
+@Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
+public class User implements Serializable {</p>
+
+<p>}
+                        ```
+                    
+                     
+                        ## Spring Security
+                        ###### -
+                        ### Framework de securité <em>Blindé</em> </p>
+
+<pre><code>                    * L’outil principal, largement utilisé dans toutes les industries
+                    * Il sécurise les URL et le code Java (Spring Beans)
+                    * Fonctionne bien avec toutes les architectures d'applications Web
+
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Spring MVC REST
+                    ###### -
+                    ### Le meilleur REST framework pour Java
+
+                    * Solution REST complète de haute performance
+                    * Grand support de Spring , grand support de test
+
+                    ```java
+</code></pre>
+
+<p><a href="https://github.com/RestController" class="user-mention">@RestController</a>
+public class AccountResource {
+    @RequestMapping(value = "/app/rest/account",
+            method = RequestMethod.POST)
+    public void saveAccount(<a href="https://github.com/RequestBody" class="user-mention">@RequestBody</a> UserDTO userDTO) {
+        userService.updateUserInformation(userDTO);
+    }
+}
+                        ```
+                    
+                     
+                        ## Thymeleaf
+                        ###### -
+                        ### Moteur de template moderne </p>
+
+<pre><code>                    * Utilisé quand le _Single Web Page_ ne suffit pas
+                    * Replace JSP et JSTL, qui sont dépassées
+                    * Grands modèles pour les concepteurs Web
+
+                    ``` html
+                        &amp;lsaquo;h1 th:text=&amp;quot;#{title}&amp;quot;&gt;Hello, world &amp;lsaquo;/h1&amp;rsaquo;
+                    ```
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Monitoring
+                    ###### -
+                    ### Prêt pour la production avec Metrics
+
+                    * Surveille la JVM, serveur d'application, beans Spring, cache, et encore plus!
+                    * JMX ou graphite rapports
+
+                    ```java
+</code></pre>
+
+<p><a href="https://github.com/Timed" class="user-mention">@Timed</a>
+public void saveAccount(<a href="https://github.com/RequestBody" class="user-mention">@RequestBody</a> UserDTO userDTO) {
+    userService.updateUserInformation(userDTO);
+}
+                        ```
+                    
+                     
+                        ## Cloud deployment
+                        ###### -
+                        ### Au cloud et au-delà! </p>
+
+<pre><code>                    * Déploiements devrait être facile sur site et dans le cloud
+                    * Les fournisseurs de cloud de premier plan comme Cloud Foundry, Heroku et Amazon Web Services offrent tout l'outillage et les options de déploiement spécifiques
+                &lt;/section&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;section  data-background="#e7e7e7" data-background-transition="zoom" &gt;
+                    &lt;h1 style="color: #BC011B"&gt;STOP&lt;/h1&gt;
+                        &lt;h2&gt; Talking &lt;/h2&gt;
+                    &lt;h1 style="color: #228B22"&gt;START&lt;/h1&gt;
+                        &lt;h2 style="color: #228B22"&gt; Doing &lt;/h2&gt;
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Prerequis
+                    ###### -
+                    * Installation des outils: Java, Maven / Gradle, Git, Node.js, Bower, Yeoman and Gulp / Grunt
+                    * Modification du classpath : JAVA_HOME, MVN_HOME ...etc
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                    ## Installation Jhipster
+                    ###### -
+                    ```
+</code></pre>
+
+<p>npm install -g generator-jhipster
+                        <code>
+                    &lt;/section&gt;
+                    &lt;section data-markdown&gt;
+                        ## Generer application
+                        ###### -
+</code>
+yo jhipster
+                        ```
+                    
+                     
+                        ## Front-end live reload
+                        ###### -
+                        * Reload en direct du front-end (HTML, CSS, JavaScript) grâce à Gulp. 
+                        * Modifier un fichier et votre navigateur se rafraîchira automatiquement </p>
+
+<pre><code>                    ```
+</code></pre>
+
+<p>gulp serve
+                        <code>
+                    &lt;/section&gt;
+                    &lt;section data-markdown&gt;
+                        ## Ajouter une entité
+                        ###### -
+</code>
+yo jhipster:entity foo
+                        ```
+                    </p>
+
+<pre><code>                &lt;section data-markdown&gt;
+                    ## Packaging pour production
+                    ###### -
+                    ```
+</code></pre>
+
+<p>mvn -Pprod package
+java -jar target/*.war --spring.profiles.active=prod
+                        ```
+                    </p>
+
+<pre><code>                &lt;section data-markdown&gt;
+                    ## Passer en mode production
+                    ###### -
+                    ```
+</code></pre>
+
+<p>yo jhipster:heroku
+                        ```
+                    
+                
+                 
+                      
+                        # Démonstration
+                     
+                     
+                        ## Objectifs 
+                        ###### -  </p>
+
+<pre><code>                    * Générer rapidement une application en mesure
+                    * Générer rapidement des entités _CRUD_ pour cette application
+                    * Avoir l'outillage pré-configuré et les bons freamworks pour modifier ces entités en fonction des bensoins métier
+                    * Pouvoir deployer l'ensemble en production en une commande
+                &lt;/section&gt; 
+                &lt;section data-markdown&gt;
+                    ## Simple cas d'utilisation 
+                    ###### -
+
+                    * Un _Client_ peut avoir plusieurs _Compte_ bancaire
+                    * Il effectue plusieurs _Operation_ sur un _Compte_ bancaire
+                    * Une _Operation_ peut avoir plusieurs _Libelle_
+                &lt;/section&gt;  
+                &lt;section data-markdown&gt;
+                    ## Simple cas d'utilisation 
+                    ###### - 
+                    ![](images/banque.png)
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                        ## Cas d'utilisation avancé 
+                        ###### -
+                        ![](images/hrtables.gif)
+
+                &lt;/section&gt;
+                &lt;section data-markdown&gt;
+                        ## Cas d'utilisation avancé 
+                        ######-
+                        ### JHipster Domain Language (JDL) / JHipster-UML 
+                        ###### -
+
+                        ```
+                        yo jhipster:import-jdl yourfile.jh
+                        ```
+                &lt;/section&gt;
+            &lt;/section&gt;
+
+            &lt;section  data-background="#e7e7e7"&gt;
+                &lt;h1 style="color: #BC011B"&gt;Merci!&lt;/h1&gt;
+            &lt;/section&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;script src="lib/js/head.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/reveal.min.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        // Start auto-sliding every 5s
+
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: false,
+            transition: 'slide', 
+
+            //theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+           //  transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+
+        // Start auto-sliding every 5s
+
+    &lt;/script&gt;
+        &lt;script&gt;
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-46075199-1', 'jhipster.github.io');
+              ga('send', 'pageview');
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+
+<p></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/moabdi/jhipster">Jhipster</a> is maintained by <a href="https://github.com/moabdi">moabdi</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
